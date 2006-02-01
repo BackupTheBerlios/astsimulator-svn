@@ -1,0 +1,101 @@
+\section{Road Class Reference}
+\label{classRoad}\index{Road@{Road}}
+A road in the road network.  
+
+
+{\tt \#include $<$road.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Road} ({\bf Junction} $\ast$start, {\bf Junction} $\ast$end, int ID)
+\begin{CompactList}\small\item\em Standard constructor. \item\end{CompactList}\item 
+{\bf $\sim$Road} ()
+\begin{CompactList}\small\item\em Standard destructor. \item\end{CompactList}\item 
+int {\bf get\_\-id} ()
+\item 
+{\bf Junction} $\ast$ {\bf get\_\-start} ()
+\item 
+{\bf Junction} $\ast$ {\bf get\_\-end} ()
+\item 
+double {\bf get\_\-length} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+std::list$<$ Car $\ast$ $>$ {\bf cars}
+\begin{CompactList}\small\item\em List of cars on the road. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A road in the road network. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Road@{Road}!Road@{Road}}
+\index{Road@{Road}!Road@{Road}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Road::Road ({\bf Junction} $\ast$ {\em start}, {\bf Junction} $\ast$ {\em end}, int {\em ID})}\label{classRoad_Roada0}
+
+
+Standard constructor. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em start}]Start junction \item[{\em end}]End junction \item[{\em ID}]Global ID. No collision checking is done.\end{description}
+\end{Desc}
+\index{Road@{Road}!~Road@{$\sim$Road}}
+\index{~Road@{$\sim$Road}!Road@{Road}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Road::$\sim${\bf Road} ()}\label{classRoad_Roada1}
+
+
+Standard destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Road@{Road}!get_end@{get\_\-end}}
+\index{get_end@{get\_\-end}!Road@{Road}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Junction}$\ast$ Road::get\_\-end ()\hspace{0.3cm}{\tt  [inline]}}\label{classRoad_Roada4}
+
+
+\begin{Desc}
+\item[Returns:]the road's end junction.\end{Desc}
+\index{Road@{Road}!get_id@{get\_\-id}}
+\index{get_id@{get\_\-id}!Road@{Road}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Road::get\_\-id ()\hspace{0.3cm}{\tt  [inline]}}\label{classRoad_Roada2}
+
+
+\begin{Desc}
+\item[Returns:]the road's global ID.\end{Desc}
+\index{Road@{Road}!get_length@{get\_\-length}}
+\index{get_length@{get\_\-length}!Road@{Road}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Road::get\_\-length ()\hspace{0.3cm}{\tt  [inline]}}\label{classRoad_Roada5}
+
+
+\begin{Desc}
+\item[Returns:]the length of the road.\end{Desc}
+\index{Road@{Road}!get_start@{get\_\-start}}
+\index{get_start@{get\_\-start}!Road@{Road}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Junction}$\ast$ Road::get\_\-start ()\hspace{0.3cm}{\tt  [inline]}}\label{classRoad_Roada3}
+
+
+\begin{Desc}
+\item[Returns:]the road's start junction.\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Road@{Road}!cars@{cars}}
+\index{cars@{cars}!Road@{Road}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::list$<$Car$\ast$$>$ {\bf Road::cars}}\label{classRoad_Roado0}
+
+
+List of cars on the road. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+src/road.h\item 
+src/road.cc\end{CompactItemize}

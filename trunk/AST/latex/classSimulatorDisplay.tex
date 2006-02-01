@@ -1,0 +1,68 @@
+\section{Simulator\-Display Class Reference}
+\label{classSimulatorDisplay}\index{SimulatorDisplay@{SimulatorDisplay}}
+This class is responsible for displaying the simulation.  
+
+
+{\tt \#include $<$simulatordisplay.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Simulator\-Display} (Simulator $\ast$sim, wx\-Window $\ast$parent, wx\-Window\-ID id, const wx\-Point \&pos=wx\-Default\-Position, const wx\-Size \&size=wx\-Default\-Size, long style=0, const wx\-String \&name=wx\-Panel\-Name\-Str)
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+void {\bf On\-Paint} (wx\-Paint\-Event \&event)
+\begin{CompactList}\small\item\em Custom paint event. \item\end{CompactList}\item 
+void {\bf On\-Mouse} (wx\-Mouse\-Event \&event)
+\begin{CompactList}\small\item\em Custom mouse event. \item\end{CompactList}\item 
+void {\bf On\-Timer} (wx\-Timer\-Event \&event)
+\begin{CompactList}\small\item\em Custom timer event. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class is responsible for displaying the simulation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{SimulatorDisplay@{Simulator\-Display}!SimulatorDisplay@{SimulatorDisplay}}
+\index{SimulatorDisplay@{SimulatorDisplay}!SimulatorDisplay@{Simulator\-Display}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Simulator\-Display::Simulator\-Display (Simulator $\ast$ {\em sim}, wx\-Window $\ast$ {\em parent}, wx\-Window\-ID {\em id}, const wx\-Point \& {\em pos} = {\tt wxDefaultPosition}, const wx\-Size \& {\em size} = {\tt wxDefaultSize}, long {\em style} = {\tt 0}, const wx\-String \& {\em name} = {\tt wxPanelNameStr})}\label{classSimulatorDisplay_SimulatorDisplaya0}
+
+
+Default constructor. 
+
+See wx\-Widgets documentation for the rest of the parameter documentation. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sim}]The simulator to display.\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{SimulatorDisplay@{Simulator\-Display}!OnMouse@{OnMouse}}
+\index{OnMouse@{OnMouse}!SimulatorDisplay@{Simulator\-Display}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Display::On\-Mouse (wx\-Mouse\-Event \& {\em event})}\label{classSimulatorDisplay_SimulatorDisplaya2}
+
+
+Custom mouse event. 
+
+\index{SimulatorDisplay@{Simulator\-Display}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!SimulatorDisplay@{Simulator\-Display}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Display::On\-Paint (wx\-Paint\-Event \& {\em event})}\label{classSimulatorDisplay_SimulatorDisplaya1}
+
+
+Custom paint event. 
+
+\index{SimulatorDisplay@{Simulator\-Display}!OnTimer@{OnTimer}}
+\index{OnTimer@{OnTimer}!SimulatorDisplay@{Simulator\-Display}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Display::On\-Timer (wx\-Timer\-Event \& {\em event})}\label{classSimulatorDisplay_SimulatorDisplaya3}
+
+
+Custom timer event. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+src/simulatordisplay.h\item 
+src/simulatordisplay.cc\end{CompactItemize}

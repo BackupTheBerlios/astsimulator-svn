@@ -1,0 +1,59 @@
+
+[filenumbers]
+0=1
+1=214
+2=20
+3=29
+4=34
+5=79
+6=33
+7=71
+8=46
+9=1
+10=20
+11=152
+12=175
+
+[filemarkers]
+0=
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+10=
+11=
+12=
+
+[File View]
+filter.file.unmatch=*.so *.o *.a *.la
+filter.file.ignore.hidden=0
+filter.dir.ignore.hidden=0
+
+[executer]
+RunInTerminal=true
+
+[Project State]
+clean before build=false
+
+[filelist]
+0=/home/torf/coding/anjuta/AST/src/simulator.h
+1=/home/torf/coding/anjuta/AST/src/simulator.cc
+2=/home/torf/coding/anjuta/AST/data/test01.ast
+3=/home/torf/coding/anjuta/AST/src/road.cc
+4=/home/torf/coding/anjuta/AST/src/car.cc
+5=/home/torf/coding/anjuta/AST/src/car.h
+6=/home/torf/coding/anjuta/AST/src/simulatordisplay.h
+7=/home/torf/coding/anjuta/AST/src/simulatordisplay.cc
+
+[Project Tree]
+0=0
+1=0:0
+2=0:1
+
+[File Tree]
+0=0

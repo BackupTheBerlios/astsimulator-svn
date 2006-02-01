@@ -1,0 +1,17 @@
+	../src/main.cc \
+	../src/junction.h \
+	../src/road.h \
+	../src/junction.cc \
+	../src/tinystr.cpp \
+	../src/tinystr.h \
+	../src/tinyxml.cpp \
+	../src/tinyxml.h \
+	../src/tinyxmlerror.cpp \
+	../src/tinyxmlparser.cpp \
+	../src/simulator.h \
+	../src/car.h \
+	../src/road.cc \
+	../src/simulator.cc \
+	../src/car.cc \
+	../src/simulatordisplay.h \
+	../src/simulatordisplay.cc \

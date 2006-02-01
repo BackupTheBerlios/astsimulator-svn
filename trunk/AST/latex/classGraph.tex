@@ -1,0 +1,163 @@
+\section{Graph$<$ NODE, EDGE $>$ Class Template Reference}
+\label{classGraph}\index{Graph@{Graph}}
+A general directed graph structure which allows parallel edges.  
+
+
+{\tt \#include $<$graph.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Graph} ()
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+void {\bf insert\_\-edge} (EDGE $\ast$edge, NODE $\ast$start, NODE $\ast$end)
+\begin{CompactList}\small\item\em Inserts the given edge into the graph. \item\end{CompactList}\item 
+void {\bf insert\_\-node} (NODE $\ast$node)
+\begin{CompactList}\small\item\em Inserts the given node into the graph. \item\end{CompactList}\item 
+void {\bf remove\_\-edge} (EDGE $\ast$edge)
+\begin{CompactList}\small\item\em Removes the given edge from the graph. \item\end{CompactList}\item 
+void {\bf remove\_\-node} (NODE $\ast$node)
+\begin{CompactList}\small\item\em Removes the given node from the graph. \item\end{CompactList}\item 
+std::vector$<$ EDGE $\ast$ $>$ $\ast$ {\bf get\_\-outgoing\_\-edges} (NODE $\ast$node)
+\begin{CompactList}\small\item\em Finds all edges which start at this node. \item\end{CompactList}\item 
+std::vector$<$ EDGE $\ast$ $>$ $\ast$ {\bf get\_\-incoming\_\-edges} (NODE $\ast$node)
+\begin{CompactList}\small\item\em Finds all edges which end at this node. \item\end{CompactList}\item 
+NODE $\ast$ {\bf get\_\-start\_\-node} (EDGE $\ast$edge)
+\begin{CompactList}\small\item\em Returns the node at which the specified edge starts. \item\end{CompactList}\item 
+NODE $\ast$ {\bf get\_\-end\_\-node} (EDGE $\ast$edge)
+\begin{CompactList}\small\item\em Returns the node at which the specified edge ends. \item\end{CompactList}\item 
+void {\bf print\_\-debug\_\-string} ()\label{classGraph_Grapha10}
+
+\begin{CompactList}\small\item\em Prints the adjacency list to STDOUT. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class NODE, class EDGE$>$ class Graph$<$ NODE, EDGE $>$}
+
+A general directed graph structure which allows parallel edges. 
+
+Nodes and edges are not stored in the graph itself, only pointers are kept. The task of cleaning them up is therefore left to the user. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ {\bf Graph}$<$ NODE, EDGE $>$::{\bf Graph} ()}\label{classGraph_Grapha0}
+
+
+Default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Graph@{Graph}!get_end_node@{get\_\-end\_\-node}}
+\index{get_end_node@{get\_\-end\_\-node}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ NODE $\ast$ {\bf Graph}$<$ NODE, EDGE $>$::get\_\-end\_\-node (EDGE $\ast$ {\em edge})}\label{classGraph_Grapha9}
+
+
+Returns the node at which the specified edge ends. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em edge}]the edge for which you want to know the end node \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the node at which the specified edge ends or NULL if the edge isn't in the graph.\end{Desc}
+\index{Graph@{Graph}!get_incoming_edges@{get\_\-incoming\_\-edges}}
+\index{get_incoming_edges@{get\_\-incoming\_\-edges}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ std::vector$<$ EDGE $\ast$ $>$ $\ast$ {\bf Graph}$<$ NODE, EDGE $>$::get\_\-incoming\_\-edges (NODE $\ast$ {\em node})}\label{classGraph_Grapha7}
+
+
+Finds all edges which end at this node. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em node}]the node \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]a vector containing pointers to the edges. Modifying this vector will of course not change the graph structure!\end{Desc}
+\index{Graph@{Graph}!get_outgoing_edges@{get\_\-outgoing\_\-edges}}
+\index{get_outgoing_edges@{get\_\-outgoing\_\-edges}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ std::vector$<$ EDGE $\ast$ $>$ $\ast$ {\bf Graph}$<$ NODE, EDGE $>$::get\_\-outgoing\_\-edges (NODE $\ast$ {\em node})}\label{classGraph_Grapha6}
+
+
+Finds all edges which start at this node. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em node}]the node \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]a vector containing pointers to the edges. Modifying this vector will of course not change the graph structure!\end{Desc}
+\index{Graph@{Graph}!get_start_node@{get\_\-start\_\-node}}
+\index{get_start_node@{get\_\-start\_\-node}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ NODE $\ast$ {\bf Graph}$<$ NODE, EDGE $>$::get\_\-start\_\-node (EDGE $\ast$ {\em edge})}\label{classGraph_Grapha8}
+
+
+Returns the node at which the specified edge starts. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em edge}]the edge for which you want to know the start node \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the node at which the specified edge starts or NULL if the edge isn't in the graph.\end{Desc}
+\index{Graph@{Graph}!insert_edge@{insert\_\-edge}}
+\index{insert_edge@{insert\_\-edge}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ void {\bf Graph}$<$ NODE, EDGE $>$::insert\_\-edge (EDGE $\ast$ {\em edge}, NODE $\ast$ {\em start}, NODE $\ast$ {\em end})}\label{classGraph_Grapha2}
+
+
+Inserts the given edge into the graph. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em edge}]edge to insert \item[{\em start}]start node \item[{\em end}]end node\end{description}
+\end{Desc}
+\index{Graph@{Graph}!insert_node@{insert\_\-node}}
+\index{insert_node@{insert\_\-node}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ void {\bf Graph}$<$ NODE, EDGE $>$::insert\_\-node (NODE $\ast$ {\em node})}\label{classGraph_Grapha3}
+
+
+Inserts the given node into the graph. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em node}]node to insert\end{description}
+\end{Desc}
+\index{Graph@{Graph}!remove_edge@{remove\_\-edge}}
+\index{remove_edge@{remove\_\-edge}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ void {\bf Graph}$<$ NODE, EDGE $>$::remove\_\-edge (EDGE $\ast$ {\em edge})}\label{classGraph_Grapha4}
+
+
+Removes the given edge from the graph. 
+
+Remember that only the graph structure is changed. The elements themselves are not removed from memory. That's the job of the user. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em edge}]edge to remove\end{description}
+\end{Desc}
+\index{Graph@{Graph}!remove_node@{remove\_\-node}}
+\index{remove_node@{remove\_\-node}!Graph@{Graph}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class NODE, class EDGE$>$ void {\bf Graph}$<$ NODE, EDGE $>$::remove\_\-node (NODE $\ast$ {\em node})}\label{classGraph_Grapha5}
+
+
+Removes the given node from the graph. 
+
+All edges which are connected to the node are removed, too. Remember that only the graph structure is changed. The elements themselves are not removed from memory. That's the job of the user. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em node}]node to remove\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+src/graph.h\item 
+src/graph.cc\end{CompactItemize}

@@ -1,0 +1,115 @@
+\section{Junction Class Reference}
+\label{classJunction}\index{Junction@{Junction}}
+A junction in the road network.  
+
+
+{\tt \#include $<$junction.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Junction} (int x, int y, int ID)
+\begin{CompactList}\small\item\em Standard constructor. \item\end{CompactList}\item 
+{\bf $\sim$Junction} ()
+\begin{CompactList}\small\item\em Standard destructor. \item\end{CompactList}\item 
+int {\bf get\_\-x} ()
+\item 
+int {\bf get\_\-y} ()
+\item 
+void {\bf set\_\-position} (int x, int y)
+\begin{CompactList}\small\item\em Sets a new position for the junction. \item\end{CompactList}\item 
+int {\bf get\_\-id} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+std::list$<$ {\bf Road} $\ast$ $>$ {\bf incoming\_\-roads}
+\begin{CompactList}\small\item\em Roads arriving at this junction. \item\end{CompactList}\item 
+std::list$<$ {\bf Road} $\ast$ $>$ {\bf outgoing\_\-roads}
+\begin{CompactList}\small\item\em Roads leaving from this junction. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A junction in the road network. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Junction@{Junction}!Junction@{Junction}}
+\index{Junction@{Junction}!Junction@{Junction}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Junction::Junction (int {\em x}, int {\em y}, int {\em ID})}\label{classJunction_Junctiona0}
+
+
+Standard constructor. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em x}]x coordinate \item[{\em y}]y coordinate \item[{\em ID}]Global ID. No collision detection is done.\end{description}
+\end{Desc}
+\index{Junction@{Junction}!~Junction@{$\sim$Junction}}
+\index{~Junction@{$\sim$Junction}!Junction@{Junction}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Junction::$\sim${\bf Junction} ()}\label{classJunction_Junctiona1}
+
+
+Standard destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Junction@{Junction}!get_id@{get\_\-id}}
+\index{get_id@{get\_\-id}!Junction@{Junction}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Junction::get\_\-id ()\hspace{0.3cm}{\tt  [inline]}}\label{classJunction_Junctiona5}
+
+
+\begin{Desc}
+\item[Returns:]the junction's global ID.\end{Desc}
+\index{Junction@{Junction}!get_x@{get\_\-x}}
+\index{get_x@{get\_\-x}!Junction@{Junction}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Junction::get\_\-x ()\hspace{0.3cm}{\tt  [inline]}}\label{classJunction_Junctiona2}
+
+
+\begin{Desc}
+\item[Returns:]the junction's x coordinate.\end{Desc}
+\index{Junction@{Junction}!get_y@{get\_\-y}}
+\index{get_y@{get\_\-y}!Junction@{Junction}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Junction::get\_\-y ()\hspace{0.3cm}{\tt  [inline]}}\label{classJunction_Junctiona3}
+
+
+\begin{Desc}
+\item[Returns:]the junction's y coordinate.\end{Desc}
+\index{Junction@{Junction}!set_position@{set\_\-position}}
+\index{set_position@{set\_\-position}!Junction@{Junction}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Junction::set\_\-position (int {\em x}, int {\em y})\hspace{0.3cm}{\tt  [inline]}}\label{classJunction_Junctiona4}
+
+
+Sets a new position for the junction. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em x}]New x coordinate. \item[{\em y}]New y coordiante.\end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Junction@{Junction}!incoming_roads@{incoming\_\-roads}}
+\index{incoming_roads@{incoming\_\-roads}!Junction@{Junction}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::list$<${\bf Road}$\ast$$>$ {\bf Junction::incoming\_\-roads}}\label{classJunction_Junctiono0}
+
+
+Roads arriving at this junction. 
+
+\index{Junction@{Junction}!outgoing_roads@{outgoing\_\-roads}}
+\index{outgoing_roads@{outgoing\_\-roads}!Junction@{Junction}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::list$<${\bf Road}$\ast$$>$ {\bf Junction::outgoing\_\-roads}}\label{classJunction_Junctiono1}
+
+
+Roads leaving from this junction. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+src/junction.h\item 
+src/junction.cc\end{CompactItemize}

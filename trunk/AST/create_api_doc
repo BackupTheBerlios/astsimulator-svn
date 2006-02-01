@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /home/torf/coding/anjuta/AST
+doxygen ast_doxygen.conf
+cd $OLDPWD
+firefox /home/torf/coding/anjuta/AST/docs/html/index.html

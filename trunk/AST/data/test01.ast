@@ -1,0 +1,23 @@
+<?xml version="1.0">
+<ast version="0.1">
+	<simulator>
+		<junctions>
+			<junction x="10" y="10" id="101" />
+			<junction x="100" y="10" id="102" />			
+			<junction x="10" y="20" id="103" />
+			<junction x="100" y="20" id="104" />			
+			<junction x="150" y="20" id="105" />			
+			<junction x="150" y="30" id="106" />
+		</junctions>
+		<roads>
+			<road start="101" end="102" id="201" />
+			<road start="103" end="104" id="202" />			
+			<road start="102" end="105" id="203" />
+			<road start="104" end="106" id="204" />
+		</roads>
+		<cars>
+			<car road="201" position="20" speed="30" id="301" />
+			<car road="202" position="10" speed="50" id="302" />
+		</cars>
+	</simulator>
+</ast>
